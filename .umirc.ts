@@ -3,7 +3,7 @@ import { defineConfig } from 'umi';
 export default defineConfig({
     ssr:{},
     dva:{
-        hmr: true,
+        //hmr: true,
     },
     dynamicImport:{},
   nodeModulesTransform: {
