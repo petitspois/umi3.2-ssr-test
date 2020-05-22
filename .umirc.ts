@@ -1,15 +1,27 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
-    ssr:{},
+    ssr:{
+        //devServerRender:true
+    },
     dva:{
         //hmr: true,
     },
     dynamicImport:{},
-  nodeModulesTransform: {
-    type: 'none',
-  },
-  routes: [
-    { path: '/', component: '@/pages/index' },
-  ],
+    
+    routes: [
+        
+        { 
+            path: '/', 
+            component: '../layouts/BasicLayout',
+
+            routes : [
+                {
+                    path:"/test",
+                    component: '@/pages/index' 
+                }
+            ]
+            
+        },
+    ],
 });
