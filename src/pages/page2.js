@@ -20,7 +20,7 @@ Page.getInitialProps = async ({ store }) => {
   await dispatch({
     type: 'test/setPage',
     payload: {
-      text: 'Hello page',
+      text: 'Hello page2',
     },
   });
   return getState();
